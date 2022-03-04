@@ -1,0 +1,29 @@
+<section class="sectionSize bg-secondary py-0">
+  <div>
+    <h2 class="secondaryTitle bg-underline4 mb-0 bg-100%">{{ pricing.title }}</h2>
+  </div>
+  <div class="flex w-full flex-col md:flex-row">
+      {% for item in pricing.items %}
+        <div
+            class="flex-1 flex flex-col mx-6 shadow-2xl relative bg-secondary rounded-2xl py-5 px-8 my-8 {{ "md:top-24" if (loop.first or loop.last) else "md:top-12"}}"
+        >
+        <h3 class="font-pt-serif font-normal text-2xl mb-4">{{ item.title }}</h3>
+        <div class="font-montserrat font-bold text-2xl mb-4">
+            {{ item.price.first }}
+            <span class="font-normal text-base">{{ item.price.last }}</span>
+        </div>
+        {% for benefit in item.benefits %}
+            <div class="flex">
+                <img src="./assets/logos/CheckedBox.svg" alt="" class="mr-1" />
+                <p>{{ benefit }}</p>
+            </div>
+        {% endfor %}
+        <button
+            class="border-2 border-solid border-black rounded-xl text-lg py-3 mt-4"
+        >
+            <a href="{{ item.cta.url }}">{{ item.cta.title }}</a>
+        </button>
+        </div>
+      {% endfor %}
+  </div>
+</section>

@@ -1,0 +1,24 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema",
+    "title": "Navigation schema",
+    "properties": {
+        "items": {
+            "items": {
+                "type": "object",
+                "properties": {
+                    "text": {
+                        "description": "Navigation Title",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "Navigation Url",
+                        "type": "string"
+                    }
+                }
+            },
+            "type":"array",
+            "required": ["text","url"]
+        }
+    },
+    "required": ["items"]
+}

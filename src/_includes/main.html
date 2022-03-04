@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js"></script>
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    {% include "./partials/navbar.html" %}
+    <!-- Hero -->
+    {% include "./partials/hero.html" %}
+
+    <!-- How it works -->
+    {# {% include "./partials/hiw.html" %} #}
+
+    <!-- Features -->
+    {# {% include "./partials/features.html" %} #}
+
+    <a name="values"></a>
+    <!-- Values -->
+    {% include "./partials/values.html" %}
+
+    <a name="what"></a>
+    <!-- Pricing -->
+    {% include "./partials/pricing.html" %}
+
+    <!-- FAQ  -->
+    {% include "./partials/faq.html" %}
+
+    <a name="contact"></a>
+    <!-- Footer -->
+    {% include "./partials/footer.html" %}
+  </body>
+</html>

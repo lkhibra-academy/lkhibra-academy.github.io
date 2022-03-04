@@ -1,0 +1,19 @@
+<section class="sectionSize bg-secondary">
+  <div class="max-w-screen-lg mx-auto px-3 py-16">
+    <div class="mb-12 text-center">
+      <h2 class="text-4xl text-gray-900 font-bold">{{ values.title }}</h2>
+      <div class="mt-4 text-xl md:px-20">{{ values.text }}</div>
+    </div>
+    {% for item in values.items %}
+        <div class="mt-20 flex flex-wrap items-center{{ " flex-row-reverse" if (loop.index % 2) }}">
+            <div class="w-full sm:w-1/2 text-center sm:px-6">
+                <h3 class="text-3xl text-gray-900 font-semibold">{{ item.title }}</h3>
+                <div class="mt-6 text-xl leading-9">{{ item.text }}</div>
+            </div>
+            <div class="w-full sm:w-1/2 p-6">
+                <img src="{{ item.image }}" alt="{{ item.alt }}" />
+            </div>
+        </div>
+    {% endfor %}
+  </div>
+</section>

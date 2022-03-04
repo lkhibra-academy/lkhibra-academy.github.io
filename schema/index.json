@@ -1,0 +1,259 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "title": "Main Page schema",
+    "properties":{
+        "hero": {
+            "type": "object",
+            "properties": {
+                "headline": {
+                    "description": "Headline",
+                    "type": "object",
+                    "properties": {
+                        "first": {
+                            "description": "Without Underline",
+                            "type": "string"
+                        },
+                        "last": {
+                            "description": "With Underline",
+                            "type": "string"
+                        }
+                    },
+                    "required": ["first"]
+                },
+                "quote": {
+                    "description": "Main Quote",
+                    "type": "string"
+                },
+                "cta": {
+                    "type": "object",
+                    "description": "Call to action",
+                    "properties": {
+                        "text": {
+                            "description": "CTA Title",
+                            "type": "string"
+                        },
+                        "url": {
+                            "description": "CTA Url",
+                            "type": "string"
+                        }
+                    }
+                },
+                "sa": {
+                    "type": "object",
+                    "description": "Secondary action",
+                    "properties": {
+                        "text": {
+                            "description": "SA Title",
+                            "type": "string"
+                        },
+                        "url": {
+                            "description": "SA Url",
+                            "type": "string"
+                        }
+                    }
+                }
+            },
+            "required": ["headline","quote","cta","sa"]
+        },
+        "hiw": {
+            "type": "object",
+            "properties": {
+                "title": {
+                    "type": "string",
+                    "description": "Section title"
+                },
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "title":{
+                                "type": "string",
+                                "description": "Title"
+                            },
+                            "text":{
+                                "type": "string",
+                                "description": "Text"
+                            }
+                        },
+                        "required": ["title","text"]
+                    }
+                }
+            },
+            "required": ["title","items"]
+        },
+        "features": {
+            "type": "object",
+            "properties": {
+                "title": {
+                    "type": "string",
+                    "description": "Section title"
+                },
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "title":{
+                                "type": "string",
+                                "description": "Title"
+                            },
+                            "text":{
+                                "type": "string",
+                                "description": "Text"
+                            }
+                        },
+                        "required": ["title","text"]
+                    }
+                }
+            },
+            "required": ["title","items"]
+        },
+        "values": {
+            "type": "object",
+            "properties": {
+                "title":{
+                    "type": "string",
+                    "description": "Title"
+                },
+                "text":{
+                    "type": "string",
+                    "description": "Text"
+                },
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "title":{
+                                "type": "string",
+                                "description": "Title"
+                            },
+                            "text":{
+                                "type": "string",
+                                "description": "Text"
+                            },
+                            "image": {
+                                "type": "string",
+                                "description": "Image"
+                            },
+                            "alt": {
+                                "type": "string",
+                                "description": "Image alternative text"
+                            }
+                        },
+                        "required": ["title","text","image","alt"]
+                    }
+                }
+            },
+            "required": ["title","text","items"]
+        },
+        "pricing": {
+            "type": "object",
+            "properties": {
+                "title": {
+                    "type": "string",
+                    "description": "Title"
+                },
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "title": {
+                                "type": "string",
+                                "description": "title"
+                            },
+                            "price": {
+                                "type": "object",
+                                "description": "pricing",
+                                "properties": {
+                                    "first": {
+                                        "type": "string"
+                                    },
+                                    "last": {
+                                        "type": "string"
+                                    }
+                                },
+                                "required": ["first","last"]
+                            },
+                            "benefits": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            "cta": {
+                                "type": "object",
+                                "properties": {
+                                    "title": {
+                                        "type": "string"
+                                    },
+                                    "url": {
+                                        "type": "string"
+                                    }
+                                },
+                                "required": ["title","url"]
+                            }
+                        },"required": ["title","cta"]
+                    }
+                }
+            },
+            "required": ["title","items"]
+        },
+        "faq": {
+            "type": "object",
+            "properties": {
+                "title": {
+                    "type": "string",
+                    "description": "Title"
+                },
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "question": {
+                                "type": "string",
+                                "description": "Question"
+                            },
+                            "answer": {
+                                "type": "string",
+                                "description": "Answer"
+                            }
+                        },
+                        "required": ["question","answer"]
+                    }
+                }
+            },
+            "required": ["title","items"]
+        },
+        "footer": {
+            "type": "object",
+            "properties": {
+                "social": {
+                    "type":"array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "src": {
+                                "type": "string",
+                                "description": "Logo path"
+                            },
+                            "alt": {
+                                "type": "string",
+                                "description": "Alternative text"
+                            },
+                            "href": {
+                                "type": "string",
+                                "description": "Social media link"
+                            }
+                        },
+                        "required": ["src","alt","href"]
+                    }
+                }
+            }
+        }
+    },
+    "required": ["hero"]
+}

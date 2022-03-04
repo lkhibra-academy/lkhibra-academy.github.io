@@ -1,0 +1,15 @@
+<section class="bg-black sectionSize">
+  <div class="mb-4">
+    <img src="./assets/Logo_white.svg" alt="Logo" class="h-6" />
+  </div>
+  <div class="flex mb-8">
+      {% for item in footer.social %}
+        <a href="{{ item.href }}">
+            <img src="{{ item.src }}" alt="{{ item.alt }}" class="mx-4" />
+        </a>
+      {% endfor %}
+  </div>
+  <div class="text-white font-montserrat text-sm">
+    © 2022 <a href="https://ali.js.org/">Ali Bouhrouche</a>. All rights reserved
+  </div>
+</section>

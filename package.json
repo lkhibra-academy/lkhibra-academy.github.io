@@ -1,0 +1,21 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy",
+    "build:tailwind": "postcss ./src/styles.css -o ./dist/styles.css",
+    "prod:tailwind": "cross-env NODE_ENV=production postcss ./src/styles.css -o ./dist/styles.css"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "autoprefixer": "^10.2.1",
+    "cross-env": "^7.0.3",
+    "js-yaml": "^4.1.0",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.2"
+  }
+}

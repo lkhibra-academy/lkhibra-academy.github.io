@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=../../schema/navigation.json
+items:
+- text: Why
+  url: '/#values'
+- text: What
+  url: '/#what'
+- text: Contact
+  url: '/#contact'

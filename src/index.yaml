@@ -1,0 +1,99 @@
+# yaml-language-server: $schema=../schema/index.json
+hero:
+  headline:
+    first: Lkhibra
+    last: Academy
+  quote: Lkhibra Academy is the trainings academy that delivers high quality trainings with 1-1 follow,
+          so they can develop their skills because of lkhibra’s tutors who has a an expertise in their field
+          and deeper understanding of the students needs
+  cta:
+    text: Contact Us
+    url: "#contact"
+  sa:
+    text: Why we do this
+    url: "#values"
+hiw:
+  title: How it Works
+  items:
+    - title: Eat
+      text: Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    - title: Sleep
+      text: Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    - title: Rave
+      text: Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+features:
+  title: Features
+  items:
+    - title: 'Feature #1'
+      text: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam
+              voluptate praesentium tenetur earum repellendus! Dicta culpa
+              consequuntur saepe quibusdam labore, est ex ducimus tempore, quos
+              illum officiis, pariatur ea placeat.
+    - title: 'Feature #2'
+      text: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam
+              voluptate praesentium tenetur earum repellendus! Dicta culpa
+              consequuntur saepe quibusdam labore, est ex ducimus tempore, quos
+              illum officiis, pariatur ea placeat.
+    - title: 'Feature #3'
+      text: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam
+              voluptate praesentium tenetur earum repellendus! Dicta culpa
+              consequuntur saepe quibusdam labore, est ex ducimus tempore, quos
+              illum officiis, pariatur ea placeat.
+    - title: 'Feature #4'
+      text: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam
+              voluptate praesentium tenetur earum repellendus! Dicta culpa
+              consequuntur saepe quibusdam labore, est ex ducimus tempore, quos
+              illum officiis, pariatur ea placeat.
+values:
+  title: What motivate us
+  text: “When you educate one person you can
+        change a life, when you educate many
+        you can change the world”- Shai Reshef
+  items:
+    - title: Our Vision
+      text: Our vision is to be the leader of skills
+            trainings in morocco and develop competent
+            individuals who aspire to achieve their full
+            potential.
+      image: ./assets/images/vision.svg
+      alt: First feature alt text
+    - title: Our Values
+      text: Be Adventurous, Creative, and Open-Minded
+            Pursue Growth and Learning
+            Build Open and Honest Relationships
+            Build a Positive Team and Family Spirit
+            Be Passionate and Determined
+            Be Humble
+      image: ./assets/images/values.svg
+      alt: Second feature alt text
+    - title: Our Mission
+      text: Our mission is to open new opportunities for student
+            through helping them developing new
+            skills related to future jobs
+      image: ./assets/images/mission.svg
+      alt: Third feature alt text
+pricing:
+  title: Packs
+  items:
+    - title: Formation Graphique Design
+      cta:
+        title: "Choose plan"
+        url: "#"
+    - title: Formation Programming
+      cta:
+        title: "Choose plan"
+        url: "#"
+    - title: Formation Complete
+      cta:
+        title: "Choose plan"
+        url: "#"
+faq:
+  title: 'FAQ'
+  items:
+    - question: Who is this for?
+      answer: For students between 17-25 with a growth mindset
+footer:
+  social:
+    - src: ./assets/logos/Instagram.svg
+      alt: Instagram logo
+      href: 'https://www.instagram.com/lkhibra.ma/'
