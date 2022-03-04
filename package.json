@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "eleventy --serve",
     "build": "eleventy",
-    "build:tailwind": "postcss ./src/styles.css -o ./dist/styles.css",
-    "prod:tailwind": "cross-env NODE_ENV=production postcss ./src/styles.css -o ./dist/styles.css"
+    "build:tailwind": "postcss ./src/styles.css -o ./docs/styles.css",
+    "prod:tailwind": "cross-env NODE_ENV=production postcss ./src/styles.css -o ./docs/styles.css"
   },
   "dependencies": {},
   "devDependencies": {
