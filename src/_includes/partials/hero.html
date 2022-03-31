@@ -14,31 +14,31 @@
       {{ hero.quote }}
     </blockquote>
     <div class="font-montserrat">
+      <a href="{{ hero.sa.url }}"><button class="px-6 py-4 border-2 border-black text-black border-solid rounded-lg">
+        {{ hero.sa.text }}
+      </button></a>
       <a href="{{ hero.cta.url }}"><button
         class="bg-black px-6 py-4 rounded-lg border-2 border-black border-solid text-white mr-2 mb-2"
       >
         {{ hero.cta.text }}
       </button></a>
-      <a href="{{ hero.sa.url }}"><button class="px-6 py-4 border-2 border-black border-solid rounded-lg">
-        {{ hero.sa.text }}
-      </button></a>
     </div>
   </div>
   <div class="flex justify-around md:block mt-8 md:mt-0 md:flex-1">
     <div class="relative">
-      <img
+      {# <img
         src="./assets/Highlight1.svg"
         alt=""
         class="absolute -top-16 -left-10"
-      />
+      /> #}
     </div>
     <img src="./assets/Hero.svg" alt="Code thinking" />
     <div class="relative">
-      <img
+      {# <img
         src="./assets/Highlight2.svg"
         alt=""
         class="absolute -bottom-10 -right-6"
-      />
+      /> #}
     </div>
   </div>
 </section>

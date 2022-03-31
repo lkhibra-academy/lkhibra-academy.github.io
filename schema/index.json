@@ -71,6 +71,10 @@
                                 "type": "string",
                                 "description": "Title"
                             },
+                            "img":{
+                                "type": "string",
+                                "description": "Image"
+                            },
                             "text":{
                                 "type": "string",
                                 "description": "Text"

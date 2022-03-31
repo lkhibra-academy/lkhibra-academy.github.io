@@ -1,26 +1,30 @@
 # yaml-language-server: $schema=../schema/index.json
 hero:
   headline:
-    first: Lkhibra
-    last: Academy
-  quote: Lkhibra Academy is the trainings academy that delivers high quality trainings with 1-1 follow,
-          so they can develop their skills because of lkhibra’s tutors who has a an expertise in their field
-          and deeper understanding of the students needs
+    first: Never stop learning
+    # last: Academy
+  quote: Because life never stops teaching!
   cta:
+    text: Get Started
+    url: "#start"
+  sa:
     text: Contact Us
     url: "#contact"
-  sa:
-    text: Why we do this
-    url: "#values"
 hiw:
-  title: How it Works
+  title: How Lkhibra works
   items:
-    - title: Eat
-      text: Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-    - title: Sleep
-      text: Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-    - title: Rave
-      text: Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    - title: ""
+      img: "/assets/imgs/001-agreement.png"
+      text: 1. Registre to a Training
+    - title: ""
+      img: "/assets/imgs/002-whatsapp.png"
+      text: 2. You will get contacted via WhatsApp 
+    - title: ""
+      img: "/assets/imgs/004-online-learning.png"
+      text: 3. Start learning
+    - title: ""
+      img: "/assets/imgs/001-certificate.png"
+      text: 4. Take your certificate
 features:
   title: Features
   items:

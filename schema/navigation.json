@@ -13,6 +13,23 @@
                     "url": {
                         "description": "Navigation Url",
                         "type": "string"
+                    },
+                    "childs": {
+                        "description": "Navigation Childs",
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "text": {
+                                    "description": "Navigation Title",
+                                    "type": "string"
+                                },
+                                "url": {
+                                    "description": "Navigation Url",
+                                    "type": "string"
+                                }
+                            }
+                        }
                     }
                 }
             },

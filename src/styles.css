@@ -41,3 +41,7 @@ html {
 .growing-underline:focus::after {
   transform: translate3d(0, 0, 0);
 }
+
+nav li:hover a + ul{
+  display: flex;
+}
