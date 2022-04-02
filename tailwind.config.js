@@ -5,6 +5,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     colors: {
+      transparent: "transparent",
       secondary: "white",
       primary: "#D9254C",
       black: "#151d3b",

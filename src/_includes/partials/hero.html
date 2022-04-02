@@ -6,7 +6,7 @@
       {{ hero.headline.first }}
       {% if hero.headline.last %}
         <span class="bg-underline1 bg-left-bottom bg-no-repeat pb-2 bg-100%">
-            Academy
+            {{ hero.headline.last}}
         </span>
       {% endif %}
     </h1>
@@ -14,11 +14,11 @@
       {{ hero.quote }}
     </blockquote>
     <div class="font-montserrat">
-      <a href="{{ hero.sa.url }}"><button class="px-6 py-4 border-2 border-black text-black border-solid rounded-lg">
+      <a href="{{ hero.sa.url }}"><button class="px-6 py-4 border-2 border-primary text-primary border-solid rounded-lg">
         {{ hero.sa.text }}
       </button></a>
       <a href="{{ hero.cta.url }}"><button
-        class="bg-black px-6 py-4 rounded-lg border-2 border-black border-solid text-white mr-2 mb-2"
+        class="bg-primary px-6 py-4 rounded-lg border-2 border-primary border-solid text-white mr-2 mb-2"
       >
         {{ hero.cta.text }}
       </button></a>
